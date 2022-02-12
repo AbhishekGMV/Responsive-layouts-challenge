@@ -16,13 +16,14 @@
   <body>
     <header>
       <!-- Navigation -->
-      <div class="row container">
-        <a class="nav__logo" href="#">
-          <img src="img/logo.svg" class="logo" alt="logo" />
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <div class="nav__list--primary">
+      <div>
+        <nav class="nav container">
+          <a class="nav__logo" href="#">
+            <img src="img/logo.svg" class="logo" alt="logo" />
+          </a>
+
+          <ul class="nav__list flex">
+            <div class="nav__list--primary flex">
               <li class="nav__item">
                 <a class="nav__link" href="#">Home</a>
               </li>
@@ -34,7 +35,7 @@
               </li>
             </div>
             <!--/Primary Nav-->
-            <div class="nav__list--secondary">
+            <div class="nav__list--secondary flex">
               <li class="nav__item">
                 <a class="nav__link" href="#">Sign in</a>
               </li>
@@ -47,8 +48,9 @@
         </nav>
       </div>
       <!-- /Navigation -->
+    </header>
 
-      <section class="hero">
+      <section class="hero container">
         <h2 class="hero__header">
           Responsive layouts don't have to be a struggle
         </h2>
@@ -58,9 +60,8 @@
         </p>
         <a class="hero__btn" href="#">I Want to learn</a>
       </section>
-    </header>
 
-    <section class="three-col container row">
+    <section class="three-col container flex">
       <div class="col">
         <h3 class="three-col__header">Mobile first</h3>
         <p class="three-col__text">
@@ -107,7 +108,7 @@
         </p>
       </div>
 
-      <div class="sidebar row">
+      <aside class="sidebar row">
         <div>
           <h3 class="sidebar__header">Break it down</h3>
           <p class="sidebar__text">
@@ -129,10 +130,11 @@
             molestiae ad quia asperiores fugiat aliquam?
           </p>
         </div>
-      </section>
-      <footer class="footer">
+      </aside>
+    </section>
+    <footer class="footer container">
         <h2 class="footer__title">just scratching the surface</h2>
-        <div  class="container row">
+        <div  class="">
           <div class="footer__info">
             <h5>About the company</h5>
             <p>

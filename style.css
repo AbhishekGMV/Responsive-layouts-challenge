@@ -12,11 +12,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body {
+  padding: 0;
   margin: 0;
-  border: 0;
 }
 
 img {
@@ -24,10 +21,46 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  padding: 0 3rem;
 }
 
-@media only screen and (max-width: 1000px) {
+.flex {
+  display: flex;
+}
+
+.nav {
+  background-color: var(--clr-primary-400);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.nav__list {
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.nav__item + .nav__item {
+  margin-left: 1rem;
+}
+
+/* .nav__list--primary {
+  width: 62%;
+}
+.nav__list--secondary {
+  width: 38%;
+} */
+
+/* @media only screen and (max-width: 1000px) {
   body {
     background-color: green;
   }
@@ -37,4 +70,4 @@ img {
   body {
     background-color: red;
   }
-}
+} */
