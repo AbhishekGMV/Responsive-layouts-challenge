@@ -39,7 +39,7 @@
               <li class="nav__item">
                 <a class="nav__link" href="#">Sign in</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item bg-secondary">
                 <a class="nav__link" href="#">Sign up</a>
               </li>
             </div>
@@ -51,14 +51,17 @@
     </header>
 
       <section class="hero container">
-        <h2 class="hero__header">
-          Responsive layouts don't have to be a struggle
-        </h2>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-          blanditiis quae amet, quibusdam illum dolor.
-        </p>
-        <a class="hero__btn" href="#">I Want to learn</a>
+        <h1 class="hero__header">
+          Responsive layouts <span class="fc-secondary"> don't have to be a struggle</span>
+        </h1>
+        
+        <div class="hero__content">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
+            blanditiis quae amet, quibusdam illum dolor.
+          </p>
+          <a class="hero__btn" href="#">I Want to learn</a>
+        </div>
       </section>
 
     <section class="three-col container flex">
@@ -90,8 +93,8 @@
       </div>
     </section>
 
-    <section class="two-col container row">
-      <div>
+    <section class="two-col container flex">
+      <div class="two-col__content">
         <h2 class="two-col__header">It doesn’t have to be so hard</h2>
         <p class="two-col__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod
@@ -99,7 +102,7 @@
           soluta sapiente nihil commodi! Minima aliquid at debitis, dicta
           numquam illum!
         </p>
-        <img class="two-class_img" src="img/hero-img.jpg" alt="image here" />
+        <img class="two-class_img" src="img/hero-img.png" alt="image here" />
         <p class="two-col__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quod
           necessitatibus nam, odit voluptatum totam expedita quos ab quaerat
@@ -109,21 +112,21 @@
       </div>
 
       <aside class="sidebar row">
-        <div>
+        <div class="col bg-primary-200">
           <h3 class="sidebar__header">Break it down</h3>
           <p class="sidebar__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             molestiae ad quia asperiores fugiat aliquam?
           </p>
         </div>
-        <div>
+        <div class="col bg-primary-200">
           <h3 class="sidebar__header">Work your way up</h3>
           <p class="sidebar__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             molestiae ad quia asperiores fugiat aliquam?
           </p>
         </div>
-        <div>
+        <div class="col bg-primary-200">
           <h3 class="sidebar__header">Do it right</h3>
           <p class="sidebar__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -134,7 +137,7 @@
     </section>
     <footer class="footer container">
         <h2 class="footer__title">just scratching the surface</h2>
-        <div  class="">
+        <div  class="footer__content">
           <div class="footer__info">
             <h5>About the company</h5>
             <p>
@@ -143,30 +146,30 @@
               dolor sit numquam.
             </p>
           </div>
-          <div>
+          <div class="footer__links">
             <h5>Getting around</h5>
             <ul>
-              <li><a class="footer_item" href="">Home</a></li>
-              <li><a class="footer_item" href="">About</a></li>
-              <li><a class="footer_item" href="">Contact</a></li>
+              <li><a class="footer__item" href="">Home</a></li>
+              <li><a class="footer__item" href="">About</a></li>
+              <li><a class="footer__item" href="">Contact</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer__links">
             <h5>Other things</h5>
             <ul>
-              <li><a class="footer_item" href="">Lorem</a></li>
-              <li><a class="footer_item" href="">ipsum</a></li>
-              <li><a class="footer_item" href="">dolor</a></li>
-              <li><a class="footer_item" href="">sit amet</a></li>
+              <li><a class="footer__item" href="">Lorem</a></li>
+              <li><a class="footer__item" href="">ipsum</a></li>
+              <li><a class="footer__item" href="">dolor</a></li>
+              <li><a class="footer__item" href="">sit amet</a></li>
             </ul>
           </div>
-          <div>
+          <div class="footer__links">
             <h5>And more</h5>
             <ul>
-              <li><a class="footer_item" href="">Lorem</a></li>
-              <li><a class="footer_item" href="">ipsum</a></li>
-              <li><a class="footer_item" href="">dolor</a></li>
-              <li><a class="footer_item" href="">sit amet</a></li>
+              <li><a class="footer__item" href="">Lorem</a></li>
+              <li><a class="footer__item" href="">ipsum</a></li>
+              <li><a class="footer__item" href="">dolor</a></li>
+              <li><a class="footer__item" href="">sit amet</a></li>
             </ul>
           </div>
         </div>

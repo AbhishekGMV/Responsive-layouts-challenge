@@ -1,11 +1,12 @@
 :root {
   --ff-oswald-bold: "Oswald", sans-serif;
   --ff-montserrat-reg: "Montserrat", sans-serif;
-  --clr-primary-400: #2e323f;
-  --clr-primary-200: #3b4050;
-  --clr-primary-100: #6f737f;
-  --clr-white: #ffffff;
-  --clr-secondary: #a59678;
+  --clr-primary-400: hsl(226, 16%, 21%);
+  --clr-primary-200: hsl(226, 15%, 27%);
+  --clr-primary-100: hsl(225, 7%, 47%);
+  --clr-dim-white: hsla(0, 0%, 100%, 0.8);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-secondary: hsl(40, 20%, 56%);
 }
 
 *,
@@ -20,12 +21,39 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.bg-secondary {
+  background-color: var(--clr-secondary);
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+
+.fc-secondary {
+  color: var(--clr-secondary);
+}
+
 .container {
-  padding: 0 3rem;
+  padding: 0 4rem;
 }
 
 .flex {
   display: flex;
+}
+
+.col {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 .nav {
@@ -33,26 +61,167 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
 }
 
 .nav__list {
   width: 60%;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
 }
 
-.nav__link {
+.nav__link,
+.nav__link:focus {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-white);
+  font-family: var(--ff-oswald-bold);
+  font-size: 1.25rem;
+}
+
+.nav__item {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1.5rem;
 }
 
 .nav__item + .nav__item {
   margin-left: 1rem;
 }
 
+.hero {
+  padding: 6rem 4rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-primary-200);
+  color: var(--clr-white);
+}
+
+.hero__header {
+  width: 50%;
+  font-family: var(--ff-oswald-bold);
+  font-size: 5.625rem;
+  line-height: 1.1;
+}
+
+.hero__content {
+  width: 50%;
+  padding: 1rem;
+  font-family: var(--ff-montserrat-reg);
+  font-size: 1.5rem;
+  color: var(--clr-dim-white);
+}
+
+.hero__btn {
+  display: inline-block;
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  font-family: var(--ff-oswald-bold);
+  font-size: 1.5rem;
+}
+
+.three-col {
+  padding: 5rem 4rem;
+  background-color: #f8f6f0;
+  justify-content: space-between;
+}
+
+.three-col__header {
+  font-family: var(--ff-oswald-bold);
+  color: var(--clr-secondary);
+  font-size: 1.875rem;
+  padding: 1rem;
+}
+
+.three-col__text {
+  font-family: var(--ff-montserrat-reg);
+  font-size: 1.125rem;
+}
+
+.two-col {
+  padding: 5rem 4rem;
+  justify-content: space-between;
+}
+
+.two-col__content {
+  width: 60%;
+}
+
+.two-col__header {
+  font-family: var(--ff-oswald-bold);
+  font-size: 2.25rem;
+  color: var(--clr-secondary);
+}
+
+.two-col__text {
+  font-family: var(--ff-montserrat-reg);
+  font-size: 1.3125rem;
+  margin: 2rem 0;
+}
+
+.sidebar {
+  width: 33%;
+  color: var(--clr-dim-white);
+}
+
+.sidebar__header {
+  font-family: var(--ff-oswald-bold);
+  font-size: 1.825rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  color: var(--clr-white);
+}
+
+.sidebar__text {
+  font-family: var(--ff-montserrat-reg);
+  font-size: 1.125rem;
+}
+
+.footer {
+  padding: 6rem 4rem;
+  background-color: var(--clr-primary-200);
+  justify-content: space-around;
+}
+
+.footer__title {
+  font-size: 3rem;
+  font-family: var(--ff-oswald-bold);
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.footer__info {
+  width: 40%;
+}
+
+.footer__item {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.footer__info > h5,
+.footer__links > h5 {
+  color: var(--clr-secondary);
+  font-family: var(--ff-oswald-bold);
+  font-size: 1.3125rem;
+  margin: 1rem 0;
+}
+
+.footer__item,
+.footer__info > p {
+  font-family: var(--ff-montserrat-reg);
+  font-size: 1rem;
+  color: var(--clr-dim-white);
+}
 /* .nav__list--primary {
   width: 62%;
 }
