@@ -82,6 +82,10 @@ ul {
   align-items: center;
 }
 
+.burger-menu {
+  padding: 0.5rem;
+}
+
 .burger-menu > span {
   transform-origin: 20px 1px;
   transition: all 300ms ease-in-out;
@@ -258,6 +262,21 @@ ul {
 
   .nav__list {
     display: none;
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  .nav__list--primary,
+  .nav__list--secondary {
+    display: block;
+  }
+
+  .nav__item {
+    max-width: 6rem;
+  }
+
+  .nav__item + .nav__item {
+    margin: 0;
   }
 
   .hero {
@@ -300,6 +319,15 @@ ul {
   .sidebar {
     width: 100%;
     display: flex;
+  }
+
+  .sidebar__header {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+  }
+  .sidebar__text {
+    font-size: 1rem;
+    padding: 1rem;
   }
 
   .footer {
